@@ -19,9 +19,9 @@ public class Calculator {
 		for (ImageSize size : imagesSizes) {
 			column++;
 			if (column > maxColumns) {
-				column = 0;
+				column = 1;
 				x = 0;
-				y += finalImageSize.height;
+				y = finalImageSize.height;
 			}
 			x += size.width;
 			if (x > finalImageSize.width) {
